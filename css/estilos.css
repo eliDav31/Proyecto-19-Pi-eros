@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3e5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.cabeceraPrincipal {
+    background-color: #9a1b1b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.cajaAgregar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cajaAgregar input {
+    padding: 10px;
+    border-radius: 5px;
+     width: 200px;
+}
+.cajaAgregar button {
+    background-color: #aa2424;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contenedorCarriles {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto; 
+}
+.carril {
+    background-color: white;
+    min-width: 300px;
+    max-width: 350px;
+    border-radius: 10px;
+    padding: 15px;
+}
+.publicacion {
+    background-color: #f3e5f5;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.publicacion a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.publicacion span {
+    color: #aa2424;
+    font-size: 12px;
+}
