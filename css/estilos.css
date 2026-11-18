@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background-color: #fff1f0;
+    color: #2b1212;
+    margin: 0;
+}
+
+/* ---------- Estructura: barra lateral + contenido ---------- */
+.estructura {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    min-height: 100vh;
+}
+
+.barraLateral {
+    background: linear-gradient(180deg, #7a0c0c, #b71c1c);
+    color: #fff;
+    padding: 32px 24px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.barraLateral h1 {
+    font-size: 26px;
+    margin: 0 0 6px;
+    letter-spacing: 1px;
+}
+
+.subtitulo {
+    margin: 0 0 40px;
+    font-size: 13px;
+    color: #ffcdd2;
+}
+
+/* ---------- Formulario ---------- */
+.formularioId {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.formularioId label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffcdd2;
+}
+
+.formularioId input {
+    padding: 12px;
+    border: 2px solid #ef9a9a;
+    border-radius: 0;
+    background: #fff;
+    font-size: 15px;
+}
+
+.formularioId input:focus {
+    outline: none;
+    border-color: #fff;
+}
+
+.formularioId button {
+    background-color: #fff;
+    color: #b71c1c;
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.formularioId button:hover {
+    background-color: #ffcdd2;
+}
+
+/* ---------- Rejilla de tarjetas ---------- */
+.rejilla {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 24px;
+    padding: 32px;
+    align-content: start;
+}
+
+.tarjeta {
+    background-color: #fff;
+    border-top: 6px solid #c62828;
+    border-radius: 0 0 14px 14px;
+    box-shadow: 0 4px 14px rgba(122, 12, 12, 0.15);
+    padding: 18px;
+}
+
+.tarjetaTop {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.tarjetaTop h2 {
+    flex: 1;
+    margin: 0;
+    font-size: 17px;
+    color: #7a0c0c;
+}
+
+.avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #c62828;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.botonBorrar {
+    background: transparent;
+    color: #c62828;
+    border: 1px solid #c62828;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+
+.botonBorrar:hover {
+    background-color: #c62828;
+    color: #fff;
+}
+
+/* ---------- Datos del usuario ---------- */
+.datoUsuario {
+    margin: 0 0 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px dashed #ef9a9a;
+    font-size: 14px;
+    word-break: break-word;
+}
+
+.etiqueta {
+    display: block;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #c62828;
+    margin-bottom: 2px;
+}
+
+.mensajeError {
+    color: #b71c1c;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* ---------- Pantallas pequeñas ---------- */
+@media (max-width: 700px) {
+    .estructura {
+        grid-template-columns: 1fr;
+    }
+
+    .barraLateral {
+        position: static;
+        height: auto;
+    }
+
+    .subtitulo {
+        margin-bottom: 20px;
+    }
+
+    .rejilla {
+        padding: 16px;
+    }
+}

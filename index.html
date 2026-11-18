@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Panel de usuarios usando la API.">
+    <meta name="keywords" content="API, usuarios, JavaScript, carriles">
+    <meta name="author" content="Nayrelis Rumbos">
+    <title>Panel de Usuarios</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <div class="estructura">
+
+        <aside class="barraLateral">
+            <h1>Panel de Usuarios</h1>
+            <p class="subtitulo">Consulta usuarios desde la API</p>
+
+            <section class="formularioId">
+                <label for="entradaUsuario">ID de usuario</label>
+                <input type="number" id="entradaUsuario" placeholder="Del 1 al 10" min="1" max="10">
+                <button id="botonAgregar">+ Agregar tarjeta</button>
+            </section>
+        </aside>
+
+        <main id="contenedorCarriles" class="rejilla"></main>
+
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>
